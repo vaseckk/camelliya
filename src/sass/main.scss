@@ -1,0 +1,59 @@
+$fon: #DAD7CD; // Accent Color
+$fontsize: 22px; // Body Font Size
+$textcolor: #2F3E46; // Text Color
+$index: calc(1vw + 1vh);
+$userfont-prata: 'CustomFont-prata', sans-serif; // User Font Family
+$userfont-manrope: 'CustomFont-manrope', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; 
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; 
+
+
+@font-face {
+    font-family: 'CustomFont-prata';
+    src: url('../font/Prata-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CustomFont-manrope';
+  src: url('../font/Manrope.ttf') format('truetype');
+}
+
+@mixin ph {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+  xxxxl: 1800px,
+);
+
+::selection {
+	color: #DAD7CD;
+	background-color: #b5b5b5;
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {  
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@import 'block/*.scss';

@@ -1,0 +1,357 @@
+.home-index {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    font-family: $userfont-prata;
+    overflow-x: hidden;
+}
+
+.home-parametrs {
+    color: $textcolor;
+}
+
+.home-index_backColor {
+    background-color: $fon;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+.header-index {
+    width: 100vw;
+    display: inline-block; //*Для того, чтобы все слова шли в одну строчку, а не в разброс*/
+    align-items: center; //*меню становится по центру блока*/
+    justify-content: space-between;
+    margin: 0 auto; //*Для автоматического вычисления под размер компа лево-право*/
+}
+
+.header-index_parametrs {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.body-index-text_h1 {
+    display: flex;
+    letter-spacing: 3px;
+    margin-left: calc($index * 2);
+    @include media-breakpoint-down(md) { 
+        margin-top: 20px;
+    }
+}
+
+.body-index_text {
+    font-size: calc($index * 1);
+    @include media-breakpoint-up(md) {
+        font-size: calc($index * 0.9);  
+    }
+    @include media-breakpoint-up(xxl) {
+        font-size: calc($index * 1);  
+    }
+    @include media-breakpoint-down(md) { 
+        font-size: calc($index * 1.5);
+    }
+}
+
+.body-index-text_p1 {
+    display: flex;
+
+    @include media-breakpoint-down(md) { 
+        display: none;
+    }
+
+    a {
+        color: $textcolor;
+        text-decoration: none;
+    }
+
+    li {
+        @include media-breakpoint-up(xxl) {
+            margin-left: calc($index * 1); 
+        }
+        @include media-breakpoint-up(xxl) {
+            margin-left: calc($index * 0.1);
+        }
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        font-size: calc($index * 0.8);
+        @include media-breakpoint-up(md) {
+            font-size: calc($index * 0.5);  
+            margin-left: calc($index * 3);
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: calc($index * 0.6);  
+        }
+        @include media-breakpoint-up(xl) {
+            font-size: calc($index * 0.6);  
+        }
+        @include media-breakpoint-up(xxl) {
+            font-size: calc($index * 0.8);  
+        }
+        @include media-breakpoint-up(xxxl) {
+            font-size: calc($index * 1);  
+        }
+        letter-spacing: 1px;
+        opacity: 1;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; 
+    }
+
+    li a:hover { //*Для замены цвета при наводе*/
+        color: black;
+    }
+}
+
+.top-line__decor__two1, .top-line__decor__two2, .top-line__decor__two3 { 
+    background-color: $textcolor;
+    margin-top: 1%;
+    display: flex;
+    height: 1px;
+    width: 30px;
+    margin-left: calc($index * 2.5);
+    @include media-breakpoint-up(md) {
+        display: none;  
+    }
+    @include media-breakpoint-up(xl) {
+        display: flex;  
+    }
+ //   justify-content: space-between;
+}
+
+.body-index {
+    display: block;
+    margin-left: calc($index * 2);
+    margin-top: 10%;
+    z-index: 154;
+    @include media-breakpoint-between(md, xl) { 
+        margin-left: calc($index * 0.5);
+        margin-top: 30%;
+    }
+}
+
+.body-index-text_h2 {
+    font-size: calc($index * 2);
+    letter-spacing: 5px;
+
+}
+
+.body-index-text_p2 {
+    margin-top: calc($index * 3.2);
+    font-size: calc($index * 1);
+    width: calc($index * 45);
+    letter-spacing: 2px;
+    line-height: 1.7;
+    font-family: $userfont-manrope;
+    position: relative;
+    @include media-breakpoint-between(md, xl) { 
+        font-size: calc($index * 1);
+        letter-spacing: 1px;
+        width: calc($index * 41);
+    }
+    @include media-breakpoint-down(md) {
+        width: calc($index * 28);
+    }
+}
+
+.body--index-text_p2 {
+    @include media-breakpoint-between(md, xl) { 
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+.circle {
+    display: flex;
+    width: 30%;
+    height: 15%;
+    background-color: #B5838D;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: calc($index * 16);
+    margin-left: calc($index * -8);
+    opacity: 0.9;
+    -webkit-transition: all 0.9s ease;
+    transition: all 0.9s ease; 
+    z-index: 0;
+}
+ 
+.circle-two {
+    width: 40%;
+    height: 25%;
+    background-color: #B5838D;
+    position: absolute;
+    border-radius: 50%;
+    right: -250px;
+    bottom: 45%;
+    opacity: 0.9;
+    margin-bottom: calc($index * 16);
+    margin-left: calc($index * -8);
+    -webkit-transition: all 0.9s ease;
+    transition: all 0.9s ease; 
+}
+
+.circle-three {
+    display: flex;
+    width: 30%;
+    height: 15%;
+    background-color: #B5838D;
+    position: absolute;
+    border-radius: 50%;
+    right: 0px;
+    bottom: 40%;
+    margin-bottom: calc($index * 16);
+    margin-left: calc($index * -8);
+    opacity: 0.9;
+    -webkit-transition: all 0.9s ease;
+    transition: all 0.9s ease; 
+    z-index: 0;
+}
+
+//SM
+
+.home-section_sm {
+    width: 100vw;
+    position: fixed;
+    display: block;
+    @include media-breakpoint-up(md) { 
+        display: none;
+    }
+}
+
+.home-section_img_sm {
+    width: 100%;
+    margin-left: calc($index * 13);
+    border: none;
+    background-color: rgba(255, 255, 255, 0); 
+    &:focus {
+        background-color: $textcolor;
+    }
+}
+
+.home-section_image_sm {
+    width: calc($index * 2.5);
+}
+
+.close_sm {
+    float: right;
+    font-family: sans-serif;
+    font-size: calc($index * 3); // допустим, что $index = 10
+    right: calc($index * 2);
+    top: calc($index * 0.5); // допустим, что $index = 10
+    position: fixed;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+  }
+
+.element-button {
+    margin-top: 100px;
+    display: none;
+    margin-left: 0px;
+    width: 100%;
+    z-index: 12;
+}
+
+.element-button_parametrs {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    background-color: $textcolor;
+    text-decoration: none;
+    color: $fon;
+    height: 20vh;
+    border-radius: 0px 0px 15px 15px;
+}
+
+//mywork_sm
+
+.mywork_sm {
+    padding-top: 20px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mywork_sm_parametrs {
+    color: $fon;
+    text-decoration: none;
+}
+
+.mywork_sm_text {
+    font-size: calc($index * 1.5);
+    letter-spacing: 1px;
+}
+
+
+//price_sm
+
+.price_sm {
+    padding-top: 5px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.price_sm_parametrs {
+    color: $fon;
+    text-decoration: none;
+}
+
+.price_sm_text {
+    font-size: calc($index * 1.5);
+    letter-spacing: 1px;
+}
+
+//stage_sm
+
+.stage_sm {
+    padding-top: 5px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.stage_sm_parametrs {
+    color: $fon;
+    text-decoration: none;
+}
+
+.stage_sm_text {
+    font-size: calc($index * 1.5);
+    letter-spacing: 1px;
+}
+
+//contact_sm
+
+.contact_sm {
+    padding-top: 5px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact_sm_parametrs {
+    color: $fon;
+    text-decoration: none;
+}
+
+.contact_sm_text {
+    font-size: calc($index * 1.5);
+    letter-spacing: 1px;
+}
+

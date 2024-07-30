@@ -1,0 +1,427 @@
+.stage-section {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    @include media-breakpoint-down(md) { 
+      height: auto;
+  }
+}
+
+.stage-parametrs {
+    background-color: $fon;
+    height: 100%;
+}
+
+//stage-header_parametrs
+
+.stage-header {
+    width: 100%;
+    display: flex;
+}
+
+.stage-header_parametrs {
+    width: 100%;
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.stage-header-text {
+    font-size: calc($index * 2);
+    letter-spacing: 3px;
+}
+
+//stage-body
+
+.stage-body {
+  display: block;
+  width: 100vw;  
+  align-items: center;
+  justify-content: center;
+  margin-top: calc($index * 3);
+  @include media-breakpoint-between(md, xl) { 
+    padding-top: calc($index * 1);
+}
+  @include media-breakpoint-down(md) { 
+    display: block;
+    justify-content: center;
+    margin-top: calc($index * 0);
+}
+}
+
+.stage-body_parametrs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  @include media-breakpoint-down(md) { 
+    display: block;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+}
+
+.stage-one_section {
+  display: flex;
+  width: calc($index * 14);
+  height: calc($index * 10);
+  margin-left: calc($index * 2);
+  @include media-breakpoint-down(md) { 
+    width: 100vw;
+    margin-left: 0px;
+}
+}
+
+.stage-one_parametrs {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+  @include media-breakpoint-down(md) { 
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: calc($index * 10);
+    align-items: center;
+    text-align: center;
+}
+  }
+  
+  .stage-one_number {
+    flex-shrink: 0; 
+    font-size: calc($index * 2); 
+    @include media-breakpoint-down(md) { 
+      display: flex;
+      justify-content: center;
+  }
+  }
+  
+  .stage-one_content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stage-one_h1 {
+    margin-bottom: 10px; 
+
+  }
+
+.stage-one {
+  font-size:  calc($index * 1);
+  margin-bottom: calc($index * 0.5);
+}
+  
+  .stage-one_text {
+    margin-top: 0;
+    font-size:  calc($index * 0.7);
+  }
+
+//2
+
+.stage-two_section {
+  display: block;
+  width: calc($index * 13);
+  height: calc($index * 10);
+  @include media-breakpoint-down(md) { 
+    width: 100vw;
+}
+}
+
+.stage-two_parametrs {
+    display: flex;
+    align-items: flex-start;
+     gap: 20px; 
+    @include media-breakpoint-down(md) { 
+      display: block;
+      justify-content: center;
+      width: 100%;
+      height: calc($index * 10);
+      align-items: center;
+      text-align: center;
+  }
+  }
+  
+  .stage-two_number {
+    flex-shrink: 0; 
+    font-size: calc($index * 2); 
+    @include media-breakpoint-down(md) { 
+      display: flex;
+      justify-content: center;
+  }
+  }
+  
+  .stage-two_content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stage-two_h1 {
+    margin-bottom: 10px; 
+
+  }
+
+.stage-two {
+  font-size:  calc($index * 1);
+  margin-bottom: calc($index * 0.5);
+}
+  
+  .stage-two_text {
+    margin-top: 0;
+    font-size:  calc($index * 0.7);
+  }
+
+//3
+
+.stage-three_section {
+  display: block;
+  width: calc($index * 14);
+  height: calc($index * 10);
+  margin-right: calc($index * 2);
+  @include media-breakpoint-down(md) { 
+    width: 100vw;
+}
+}
+
+.stage-three_parametrs {
+    display: flex;
+    //align-items: flex-start;
+    gap: 20px; 
+    @include media-breakpoint-down(md) { 
+      display: block;
+      justify-content: center;
+      width: 100%;
+      height: calc($index * 10);
+      align-items: center;
+      text-align: center;
+  }
+  }
+  
+  .stage-three_number {
+    flex-shrink: 0; 
+    font-size: calc($index * 2); 
+    @include media-breakpoint-down(md) { 
+      display: flex;
+      justify-content: center;
+  }
+  }
+  
+  .stage-three_content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stage-three_h1 {
+    margin-bottom: 10px; 
+
+  }
+
+.stage-three {
+  font-size:  calc($index * 1);
+  margin-bottom: calc($index * 0.5);
+}
+  
+  .stage-three_text {
+    margin-top: 0;
+    font-size:  calc($index * 0.7);
+  }
+
+//stage-body
+
+.stage-body-SECOND {
+  display: block;
+  width: 100vw;  
+  align-items: center;
+  justify-content: center;
+  margin-top: calc($index * 2);
+  @include media-breakpoint-between(md, xl) { 
+    padding-top: calc($index * 10);
+}
+@include media-breakpoint-down(md) { 
+  display: block;
+  justify-content: center;
+  margin-top: calc($index * 0);
+}
+}
+
+.stage-body_parametrs-SECOND {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  //margin-left: calc($index * 3);
+  //text-align: center;
+  @include media-breakpoint-down(md) { 
+    display: block;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+}
+
+.stage-one_section-SECOND {
+  display: block;
+  width: calc($index * 14);
+  height: calc($index * 10);
+  margin-left: calc($index * 2);
+  @include media-breakpoint-down(md) { 
+    width: 100vw;
+    margin-left: 0px;
+}
+}
+
+.stage-one_parametrs-SECOND {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+    @include media-breakpoint-down(md) { 
+      display: block;
+      justify-content: center;
+      width: 100%;
+      height: calc($index * 10);
+      align-items: center;
+      text-align: center;
+  }
+  }
+  
+  .stage-one_number-SECOND {
+    flex-shrink: 0; 
+    font-size: calc($index * 2); 
+    @include media-breakpoint-down(md) { 
+      display: flex;
+      justify-content: center;
+  }
+  }
+  
+  .stage-one_content-SECOND {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stage-one_h1-SECOND {
+    margin-bottom: 10px; 
+
+  }
+
+.stage-one-SECOND {
+  font-size:  calc($index * 1);
+  margin-bottom: calc($index * 0.5);
+}
+  
+  .stage-one_text-SECOND {
+    margin-top: 0;
+    font-size:  calc($index * 0.7);
+  }
+
+//2-SECOND
+
+.stage-two_section-SECOND {
+  display: block;
+  width: calc($index * 13);
+  height: calc($index * 10);
+  @include media-breakpoint-down(md) { 
+    width: 100vw;
+    margin-left: 0px;
+}
+}
+
+.stage-two_parametrs-SECOND {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+    @include media-breakpoint-down(md) { 
+      display: block;
+      justify-content: center;
+      width: 100%;
+      height: calc($index * 10);
+      align-items: center;
+      text-align: center;
+  }
+  }
+  
+  .stage-two_number-SECOND {
+    flex-shrink: 0; 
+    font-size: calc($index * 2); 
+    @include media-breakpoint-down(md) { 
+      display: flex;
+      justify-content: center;
+  }
+  }
+  
+  .stage-two_content-SECOND {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stage-two_h1-SECOND {
+    margin-bottom: 10px; 
+
+  }
+
+.stage-two-SECOND {
+  font-size:  calc($index * 1);
+  margin-bottom: calc($index * 0.5);
+}
+  
+  .stage-two_text-SECOND {
+    margin-top: 0;
+    font-size:  calc($index * 0.7);
+  }
+
+//3-SECOND
+
+.stage-three_section-SECOND {
+  display: block;
+  width: calc($index * 14);
+  height: calc($index * 10);
+  margin-right: calc($index * 2);
+  @include media-breakpoint-down(md) { 
+    width: 100vw;
+    margin-left: 0px;
+}
+}
+
+.stage-three_parametrs-SECOND {
+    display: flex;
+    //align-items: flex-start;
+    gap: 20px; 
+    @include media-breakpoint-down(md) { 
+      display: block;
+      justify-content: center;
+      width: 100%;
+      height: calc($index * 10);
+      align-items: center;
+      text-align: center;
+  }
+  }
+  
+  .stage-three_number-SECOND {
+    flex-shrink: 0; 
+    font-size: calc($index * 2); 
+    @include media-breakpoint-down(md) { 
+      display: flex;
+      justify-content: center;
+  }
+  }
+  
+  .stage-three_content-SECOND {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stage-three_h1-SECOND {
+    margin-bottom: 10px; 
+
+  }
+
+.stage-three-SECOND {
+  font-size:  calc($index * 1);
+  margin-bottom: calc($index * 0.5);
+}
+  
+  .stage-three_text-SECOND {
+    margin-top: 0;
+    font-size:  calc($index * 0.7);
+  }
+

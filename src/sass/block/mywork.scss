@@ -1,0 +1,380 @@
+.mywork {
+    min-height: 100vh;
+    display: flex;
+    font-family: $userfont-prata;
+}
+
+.mywork-parametrs {
+    color: $textcolor;
+    width: 100%;
+}
+
+.mywork-text {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 125px;
+    @include media-breakpoint-between(md, xl) { 
+        display: flex;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: calc($index * 15);
+    }
+    @include media-breakpoint-down(md) { 
+        margin-top: calc($index * 10);
+        display: flex;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px; 
+    }
+}
+
+.mywork-h3 {
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.mywork-section1 {
+    width: 600px;
+    height: 500px;
+    margin-left: 55%;
+    display: block;
+    position: relative; 
+    @include media-breakpoint-between(md, xl) { 
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 300px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+}
+
+.mywork-img1 {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 2px solid #000; // Пример задания черного бордюра толщиной 2 пикселя 
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0); 
+    outline: none;
+    @include media-breakpoint-between(md, xl) { 
+     width: 100%;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;   
+    }
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 180px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+}
+
+.mywork-img1_parametrs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mywork-image1 {
+    width: 500px;
+    height: 200px;
+    //margin: auto;
+    background-size: 510px;
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(md) { 
+        width: 330px;
+        height: 140px;
+        //margin: auto;
+        margin-top: calc($index * 1.5);
+        display: block;
+    }
+}
+
+.mywork-click_active {
+    margin-top: calc($index * 2);
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+.mywork-click_active-parametrs {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mywork-click_active-text {
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 40%;
+    height: calc($index * 2);
+    border: 2px solid #000; // Пример задания черного бордюра толщиной 2 пикселя 
+    border-radius: 15px;
+    @include media-breakpoint-down(md) { 
+        width: 50%;
+    }
+}
+
+.mywork-section2 {
+    width: 600px;
+    height: 500px;
+    margin-left: 5%;
+    display: block;
+    position: relative; 
+    @include media-breakpoint-between(md, xl) { 
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 300px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+}
+
+.mywork-img2 {
+    margin-top: 20px;
+    display: flex; 
+    border: 2px solid #000; // Пример задания черного бордюра толщиной 2 пикселя 
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.092); 
+    outline: none;
+    position: relative; 
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 180px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+}
+
+.mywork-img2_parametrs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mywork-image2 {
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    @include media-breakpoint-down(md) { 
+        width: 330px;
+        height: 140px;
+        //margin: auto;
+        margin-top: calc($index * 1.5);
+        display: block;
+    }
+}
+
+.mywork-fon__camelliya {
+    margin-top: 50px;
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 140vh;
+    background-image: url(../img/mywork/image-cam.png);
+    @include media-breakpoint-between(md, xl) { 
+        display: none;
+    }
+    @include media-breakpoint-down(md) { 
+        display: none;
+    }
+}
+
+.mywork-fon__camelliya-text {
+    font-size: 50px;
+    transform: rotate(90deg);
+    margin: auto;
+}
+
+.mywork-section3 {
+    width: 600px;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: 58%;
+    display: block;
+    position: relative; 
+    @include media-breakpoint-between(md, xl) { 
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 300px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+    @include media-breakpoint-down(xl) { 
+        margin-left: 48%;
+    }
+    @include media-breakpoint-down(lg) { 
+        margin-left: 38%;
+    }
+}
+
+.mywork-img3 {
+    display: flex; 
+    border: 2px solid #000; // Пример задания черного бордюра толщиной 2 пикселя 
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0); 
+    outline: none;
+    position: relative; 
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 180px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+}
+
+.mywork-img3_parametrs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mywork-image3 {
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    @include media-breakpoint-down(md) { 
+        width: 330px;
+        height: 140px;
+        //margin: auto;
+        margin-top: calc($index * 1.5);
+        display: block;
+    }
+}
+
+.mywork-section4 {
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 58%;
+    display: block;
+    position: relative; 
+    @include media-breakpoint-between(md, xl) { 
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 300px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+    @include media-breakpoint-down(xl) { 
+        margin-left: 48%;
+    }
+    @include media-breakpoint-down(lg) { 
+        margin-left: 38%;
+    }
+}
+
+.mywork-img4 {
+    display: flex; 
+    border: 2px solid #000; // Пример задания черного бордюра толщиной 2 пикселя 
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0); 
+    outline: none;
+    position: relative; 
+    margin-bottom: 30px;
+    @include media-breakpoint-down(md) { 
+        width: 350px;
+        height: 180px;
+        margin: auto;
+        margin-top: calc($index * 3);
+        display: block;
+    }
+}
+
+.mywork-img4_parametrs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mywork-image4 {
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    @include media-breakpoint-down(md) { 
+        width: 330px;
+        height: 140px;
+        //margin: auto;
+        margin-top: calc($index * 1.5);
+        display: block;
+    }
+}
+
+.mywork-price {
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    @include media-breakpoint-between(md, xl) { 
+        display: flex;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include media-breakpoint-down(md) { 
+        margin-top: 100px;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.mywork-price__text {
+    font-size: 30px;
+}

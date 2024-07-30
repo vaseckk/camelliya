@@ -1,0 +1,715 @@
+.price-section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: $textcolor;
+    top: 0px;
+    left: 0px;
+    font-family: $userfont-prata;
+    position: relative;
+    @include media-breakpoint-between(md, xl) { 
+      height: auto;
+  }
+  @include media-breakpoint-down(md) { 
+    height: auto;
+}
+}
+
+.price-section_parametrs {
+    color: $fon;
+    width: 100%;
+}
+
+//price-sectionHeader
+
+.price-sectionHeader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.price-sectionHeader_parametrs {
+    display: flex;
+    width: 100%;
+    height: calc($index * 3);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    @include media-breakpoint-between(md, xl) { 
+      height: calc($index * 3.5);
+  }
+  @include media-breakpoint-down(md) { 
+    height: calc($index * 3.5);
+}
+}
+
+.price-header_parametrs {
+    font-size: calc($index * 0.8);
+    letter-spacing: 2px;
+    opacity: .7;
+}
+
+//price-sectionBody
+
+.price-sectionBody {
+    width: 100vw;
+    display: inline-block;
+}
+
+.price-body_parametrs {
+    width: 100%;
+    display: block;
+    align-items: center;
+
+    text-align: center;
+    justify-content: space-between;
+    color: $textcolor;
+}
+
+//prise-blockVisitka-1
+
+.prise-blockVisitka {
+    margin-right: calc($index * 5);
+    margin-top: calc($index * 5);
+    width: calc($index * 12);
+    height: calc($index * 17);
+    display: inline-flex;
+    @include media-breakpoint-between(md, xl) { 
+      display: flex;
+      margin: auto;
+      padding-top: calc($index * 1);
+      width: calc($index * 25);
+      height: calc($index * 17);
+  }
+  @include media-breakpoint-down(md) { 
+    display: flex;
+    margin: auto;
+    padding-top: calc($index * 1);
+    width: calc($index * 25);
+    height: calc($index * 30);
+}
+}
+
+.price-blockVisitka_parametrs {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    @include media-breakpoint-between(md, xl) { 
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: block;
+      height: calc($index * 15);
+  }
+  @include media-breakpoint-down(md) { 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: calc($index * 28);
+}
+}
+
+.price-sectionHeader-visitka {
+    color: $textcolor;
+    height: 30%;
+    @include media-breakpoint-between(md, xl) { 
+      padding-top: calc($index * 1);
+  }
+  @include media-breakpoint-down(md) { 
+    padding-top: calc($index * 1);
+}
+}
+
+//price-sectionBody-visitka
+
+.price-sectionBody-visitka {
+    display: block;
+    height: 40%;
+    //padding-top: calc($index * 2);
+}
+
+//price-sectionFooter-visitka
+
+.price-sectionFooter-visitka {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    //padding-top: calc($index * 3);
+}
+
+.price-sectionFooter_parametrs {
+    background-color: #b5b5b5;
+    border-radius: 15px;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: calc($index * 2);
+}
+
+.price-sectionFooter-visitka_text {
+    letter-spacing: 2px;
+}
+
+//1
+
+//prise-blockMultiPage-2
+
+.prise-blockMultiPage {
+    margin-top: calc($index * 5);
+    width: calc($index * 12);
+    height: calc($index * 17);
+    display: inline-flex;
+    @include media-breakpoint-between(md, xl) { 
+      display: block;
+      margin: auto;
+      padding-top: calc($index * 1);
+      width: calc($index * 25);
+      height: calc($index * 17);
+  }
+  @include media-breakpoint-down(md) { 
+    display: flex;
+    margin: auto;
+    padding-top: calc($index * 1);
+    width: calc($index * 25);
+    height: calc($index * 35);
+}
+@include media-breakpoint-up(lg) { 
+  margin-right: calc($index * 4);
+}
+}
+
+.price-blockMultiPage_parametrs {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    @include media-breakpoint-between(md, xl) { 
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: block;
+      height: calc($index * 15);
+  }
+  @include media-breakpoint-down(md) { 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: calc($index * 33);
+}
+}
+
+.price-sectionHeader-MultiPage {
+    color: $textcolor;
+    height: 30%;
+    @include media-breakpoint-between(md, xl) { 
+      padding-top: calc($index * 1);
+  }
+  @include media-breakpoint-down(md) { 
+    padding-top: calc($index * 1);
+}
+}
+
+//price-sectionBody-MultiPage
+
+.price-sectionBody-MultiPage {
+    display: block;
+    height: 40%;
+}
+
+.price-sectionBody-MultiPage_text {
+    width: 95%;
+}
+
+//price-sectionFooter-MultiPage
+
+.price-sectionFooter-MultiPage {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    //padding-top: calc($index * 2.1);
+}
+
+.price-sectionFooter-MultiPage_parametrs {
+    background-color: #b5b5b5;
+    border-radius: 15px;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: calc($index * 2);
+}
+
+.price-sectionFooter-MultiPage_text {
+    letter-spacing: 2px;
+}
+
+//2
+
+//prise-blockInternetMagazine
+
+.prise-blockInternetMagazine {
+    margin-right: calc($index * 5);
+    width: calc($index * 12);
+    height: calc($index * 17);
+    display: inline-flex;
+    @include media-breakpoint-between(md, xl) { 
+      display: flex;
+      margin: auto;
+      width: calc($index * 25);
+      height: calc($index * 17);
+  }
+  @include media-breakpoint-down(md) { 
+    display: flex;
+    margin: auto;
+    padding-top: calc($index * 1);
+    width: calc($index * 25);
+    height: calc($index * 27);
+}
+}
+
+.price-blockInternetMagazine_parametrs {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    @include media-breakpoint-between(md, xl) { 
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: block;
+      height: calc($index * 15);
+  }
+  @include media-breakpoint-down(md) { 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: calc($index * 25);
+}
+}
+
+.price-sectionHeader-InternetMagazine {
+    color: $textcolor;
+    height: 30%;
+    @include media-breakpoint-between(md, xl) { 
+      padding-top: calc($index * 1);
+  }
+  @include media-breakpoint-down(md) { 
+    padding-top: calc($index * 1);
+}
+}
+
+//price-sectionBody-InternetMagazine
+
+.price-sectionBody-InternetMagazine {
+    display: block;
+    height: 40%;
+}
+
+//price-sectionFooter-InternetMagazine
+
+.price-sectionFooter-InternetMagazine {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    justify-content: center;
+    display: flex;
+}
+
+.price-sectionFooter-InternetMagazine_parametrs {
+    background-color: #b5b5b5;
+    border-radius: 15px;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: calc($index * 2);
+}
+
+.price-sectionFooter-InternetMagazine_text {
+    letter-spacing: 2px;
+}
+
+//3
+
+//prise-blockDesign
+
+.prise-blockDesign {
+    width: calc($index * 12);
+    height: calc($index * 17);
+    display: inline-flex;
+    @include media-breakpoint-between(md, xl) { 
+      display: flex;
+      margin: auto;
+      width: calc($index * 25);
+      height: calc($index * 17);
+  }
+  @include media-breakpoint-down(md) { 
+    display: flex;
+    margin: auto;
+    padding-top: calc($index * 1);
+    width: calc($index * 25);
+    height: calc($index * 27);
+}
+}
+
+.price-blockDesign_parametrs {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    @include media-breakpoint-between(md, xl) { 
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: block;
+      height: calc($index * 15);
+  }
+  @include media-breakpoint-down(md) { 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: calc($index * 25);
+}
+}
+
+.price-sectionHeader-Design {
+    color: $textcolor;
+    height: 30%;
+    @include media-breakpoint-between(md, xl) { 
+      padding-top: calc($index * 1);
+  }
+  @include media-breakpoint-down(md) { 
+    padding-top: calc($index * 1);
+}
+}
+
+//price-sectionBody-Design
+
+.price-sectionBody-Design {
+    display: block;
+    height: 40%;
+
+}
+
+//price-sectionFooter-Design
+
+.price-sectionFooter-Design {
+    width: 100%;
+    align-items: center;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.price-sectionFooter-Design_parametrs {
+    background-color: #b5b5b5;
+    border-radius: 15px;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: calc($index * 2);
+}
+
+.price-sectionFooter-Design_text {
+    letter-spacing: 2px;
+}
+
+//VISITKA
+
+.modalVisitka {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    z-index: 1050;
+    background: rgba(#000000, 0.5);
+    opacity: 0;
+    width: 100vw;
+    transition: opacity 200ms ease-in;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none; // элемент невидим для событий мыши 
+  }
+  
+  .modalVisitka:target {
+    opacity: 1;
+    pointer-events: auto; 
+    overflow-y: auto;
+  }
+  
+  .modal-dialog {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .modal-photo {
+    margin-top: 20px; // допустим, что $index = 10
+    width: 80vw;
+    overflow-y: auto;
+    border-radius: 25px;
+  }
+  
+  .close {
+    float: right;
+    font-family: sans-serif;
+    font-size: calc($index * 2); // допустим, что $index = 10
+    right: calc($index * 4.5);
+    top: calc($index * 0.5); // допустим, что $index = 10
+    position: fixed;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+    @include media-breakpoint-down(md) { 
+      right: calc($index * 1.5);
+  }
+  }
+  
+  .close:focus, .close:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+  }
+
+//MultiPage
+
+.modalMultiPage {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    z-index: 1050;
+    background: rgba(#000000, 0.5);
+    opacity: 0;
+    width: 100vw;
+    transition: opacity 200ms ease-in;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none; // элемент невидим для событий мыши 
+  }
+  
+  .modalMultiPage:target {
+    opacity: 1;
+    pointer-events: auto; 
+    overflow-y: auto;
+  }
+  
+  .modal-dialogMultiPage {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .modal-photoMultiPage {
+    margin-top: 20px; // допустим, что $index = 10
+    width: 80vw;
+    overflow-y: auto;
+    border-radius: 25px;
+  }
+  
+  .closeMultiPage {
+    float: right;
+    font-family: sans-serif;
+    font-size: calc($index * 2); // допустим, что $index = 10
+    right: calc($index * 4.5);
+    top: calc($index * 0.5); // допустим, что $index = 10
+    position: fixed;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+    @include media-breakpoint-down(md) { 
+      right: calc($index * 1.5);
+  }
+  }
+  
+  .closeMultiPage:focus, .closeMultiPage:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+  }
+
+//InternetMagazine
+
+.modalInternetMagazine {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    z-index: 1050;
+    background: rgba(#000000, 0.5);
+    opacity: 0;
+    width: 100vw;
+    transition: opacity 200ms ease-in;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none; // элемент невидим для событий мыши 
+  }
+  
+  .modalInternetMagazine:target {
+    opacity: 1;
+    pointer-events: auto; 
+    overflow-y: auto;
+  }
+  
+  .modal-dialogInternetMagazine {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .modal-photoInternetMagazine {
+    margin-top: 20px; // допустим, что $index = 10
+    width: 80vw;
+    overflow-y: auto;
+    border-radius: 25px;
+  }
+  
+  .closeInternetMagazine {
+    float: right;
+    font-family: sans-serif;
+    font-size: calc($index * 2); // допустим, что $index = 10
+    right: calc($index * 4.5);
+    top: calc($index * 0.5); // допустим, что $index = 10
+    position: fixed;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+    @include media-breakpoint-down(md) { 
+      right: calc($index * 1.5);
+  }
+  }
+  
+  .closeInternetMagazine:focus, .closeInternetMagazine:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+  }
+
+//Design
+
+.modalDesign {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    z-index: 1050;
+    background: rgba(#000000, 0.5);
+    opacity: 0;
+    width: 100vw;
+    transition: opacity 200ms ease-in;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none; // элемент невидим для событий мыши 
+  }
+  
+  .modalDesign:target {
+    opacity: 1;
+    pointer-events: auto; 
+    overflow-y: auto;
+  }
+  
+  .modal-dialogDesign {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .modal-photoDesign {
+    margin-top: 20px; // допустим, что $index = 10
+    width: 80vw;
+    overflow-y: auto;
+    border-radius: 25px;
+  }
+  
+  .closeDesign {
+    float: right;
+    font-family: sans-serif;
+    font-size: calc($index * 2); // допустим, что $index = 10
+    right: calc($index * 4.5);
+    top: calc($index * 0.5); // допустим, что $index = 10
+    position: fixed;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+    @include media-breakpoint-down(md) { 
+      right: calc($index * 1.5);
+  }
+  }
+  
+  .closeDesign:focus, .closeDesign:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+  }
